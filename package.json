@@ -1,0 +1,33 @@
+{
+  "name": "crud-authentication-authorization",
+  "version": "1.0.0",
+  "description": "this is a crud asignment with authentication and authorization",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon App.js",
+    "start": "node App.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ezeh0415/Crud-Authentication-Authorization.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Ezeh0415/Crud-Authentication-Authorization/issues"
+  },
+  "homepage": "https://github.com/Ezeh0415/Crud-Authentication-Authorization#readme",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.0.2",
+    "morgan": "^1.10.1"
+  }
+}
