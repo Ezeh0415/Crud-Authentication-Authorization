@@ -4,6 +4,9 @@ this is a crud asignment with authentication and authorization
 
 This project follows a clean MVC-based architecture with a Service layer, designed to keep the codebase modular, maintainable, and scalable.
 
+POSTMAN 
+https://ezeanwechigozie-6079412.postman.co/workspace/cohort-7-~3263f1c9-0dda-41d8-bfef-c7a8b4e11299/collection/47480502-93708ca7-2e29-4647-b790-a8de309bc4a8?action=share&creator=47480502
+
 Architecture Overview
 
 Client → Router → Controller → Service → Model → Database

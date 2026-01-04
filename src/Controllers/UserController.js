@@ -16,6 +16,16 @@ class UserController {
       return res.status(400).json({ error: "Please provide all the fields" });
     }
 
+    if (password.length < 6) {
+      return res
+        .status(400)
+        .json({ error: "Password must be at least 6 characters" });
+    }
+
+    if (email.includes("@") === false) {
+      return res.status(400).json({ error: "Invalid email format" });
+    }
+
     try {
       const pwdHash = bcrypt.hashSync(password, 10);
       const user = await this.userService.createUser({
@@ -35,6 +45,16 @@ class UserController {
     const { email, password } = req.body;
     if (!email || !password) {
       return res.status(400).json({ error: "Please provide all the fields" });
+    }
+
+    if (password.length < 6) {
+      return res
+        .status(400)
+        .json({ error: "Password must be at least 6 characters" });
+    }
+
+    if (email.includes("@") === false) {
+      return res.status(400).json({ error: "Invalid email format" });
     }
     try {
       const user = await this.userService.loginUser(email);
